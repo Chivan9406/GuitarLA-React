@@ -1,9 +1,19 @@
-import useCart from './hooks/useCart.js'
-import Header from './components/Header.jsx'
-import Guitar from './components/Guitar.jsx'
+import useCart from './hooks/useCart.ts'
+import Header from './components/Header.tsx'
+import Guitar from './components/Guitar.tsx'
 
 function App() {
-  const {data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty,  cartTotal} = useCart()
+  const {
+    data,
+    cart,
+    addToCart,
+    removeFromCart,
+    decreaseQuantity,
+    increaseQuantity,
+    clearCart,
+    isEmpty,
+    cartTotal
+  } = useCart()
 
   return (
     <>
@@ -30,7 +40,6 @@ function App() {
           ))}
         </div>
       </main>
-
 
       <footer className="bg-dark mt-5 py-5">
         <div className="container-xl">
