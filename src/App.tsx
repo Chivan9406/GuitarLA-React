@@ -4,7 +4,7 @@ import { useCart } from './hooks/useCart'
 
 function App() {
   const {
-    data, cart, setCart, addToCart,
+    data, cart, addToCart,
     removeFromCart, decreaseQuantity, increaseQuantity, clearCart,
     isEmpty, cartTotal
   } = useCart()
@@ -28,7 +28,6 @@ function App() {
             <Guitar
               key={guitar.id}
               guitar={guitar}
-              setCart={setCart}
               addToCart={addToCart}
             />
           ))}
